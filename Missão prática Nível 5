@@ -1,0 +1,35 @@
+#Geração e Transformação de dados seguidos de Geração de WordCloud#
+
+
+Objetivos da missão:
+1) Gerar dados de testes
+2) Gravar e recuperar dados de arquivos textos
+3) Manipular os dados para visualizá-los em um histograma
+4) Manipular os dados para visualizá-los em uma nuvem de palavras
+
+Resumo da missão: Implementar um programa para gerar dados com nomes de pessoas e respectivos scores, gravar em um arquivo, recuperar os dados do arquivo, 
+visualizar os dados das pontuações das pessoas em um histograma e em uma nuvem de palavras.
+
+Para rodar esse projeto em sua máquina, será necessário que você realize as seguintes intalações:
+
+!pip install faker
+!pip install wordcloud
+
+1) Gerar dados de teste
+from faker import Faker
+F = Faker()
+
+from datetime import datetime
+
+Nomes = Faker('pt_BR')
+for i in range(48):
+    print(Nomes.name())
+    
+from faker import Faker
+fake = Faker('pt_BR')
+
+for i in range(48):
+  Scores=fake.random_int(1,10)
+  print(Scores)
+  
+  
